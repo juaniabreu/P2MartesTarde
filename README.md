@@ -19,3 +19,6 @@ Lucas Iacobellis: tengo 24 años y actualmente estoy cursando el segundo año de
 * _Snapchat 🔔 : jechezuriag_
 * _Instagram 📷 : jorgeechezuria__
 * _📧 Mail : jlechezuria@gmail.com_
+
+
+Carolina Julieta Piñeiro: Tengo 21 años y actualmente estoy cursando las últimas materias de la Tecnicatura en Desarrollo de Software. Hice el maquetado y la página web del emprendimiento de una amiga, pero por el momento no trabajé formalmente en nada relacionado con la carrera.
