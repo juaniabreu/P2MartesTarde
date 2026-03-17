@@ -1,0 +1,5 @@
+Inicializar pila, crea una instancia del objeto vacio.
+	Desapilar, saca el ultimo elemento, ,mientras no este vacia. 
+	Apilar, agrega un elemento en la ultima posicion + 1.
+	PilaVacia, valida si hay elementos en la pila
+	Tope: obtiene el ultimo valor del arreglo.
