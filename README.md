@@ -22,3 +22,5 @@ Lucas Iacobellis: tengo 24 años y actualmente estoy cursando el segundo año de
 
 
 Carolina Julieta Piñeiro: Tengo 21 años y actualmente estoy cursando las últimas materias de la Tecnicatura en Desarrollo de Software. Hice el maquetado y la página web del emprendimiento de una amiga, pero por el momento no trabajé formalmente en nada relacionado con la carrera.
+
+Melisa Violi: 23 años cursando las ultimas materias de la Tecnicatura en Desarrollo de Software. Por el momento no trabaje con nada relacionado con la carrera.
