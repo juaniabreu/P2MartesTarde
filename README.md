@@ -25,4 +25,3 @@ Carolina Julieta Piñeiro: Tengo 21 años y actualmente estoy cursando las últi
 
 Melisa Violi: 23 años cursando las ultimas materias de la Tecnicatura en Desarrollo de Software. Por el momento no trabaje con nada relacionado con la carrera.
 
-![fotoUADE](https://github.com/user-attachments/assets/fe772d9f-01ae-4051-ae3a-3a750d9792da)
