@@ -10,15 +10,13 @@ Lucas Iacobellis: tengo 24 años y actualmente estoy cursando el segundo año de
 
 ### Hola, Soy Jorge Echezuria
 
-* _Tengo 21 años_ 🕺 
+* _Tengo 22 años_ 🕺 
 > Cumplo el 4 de Abril 🎈  
 > Técnico Aviónico, egresado del IMPA ✈️
 
 ### Contacto 📡
 
-* _Snapchat 🔔 : jechezuriag_
-* _Instagram 📷 : jorgeechezuria__
-* _📧 Mail : jlechezuria@gmail.com_
+* _📧 Mail : jechezuriag@gmail.com_
 
 
 Carolina Julieta Piñeiro: Tengo 21 años y actualmente estoy cursando las últimas materias de la Tecnicatura en Desarrollo de Software. Hice el maquetado y la página web del emprendimiento de una amiga, pero por el momento no trabajé formalmente en nada relacionado con la carrera.
