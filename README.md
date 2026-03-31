@@ -18,8 +18,10 @@ Lucas Iacobellis: tengo 24 años y actualmente estoy cursando el segundo año de
 
 * _📧 Mail : jechezuriag@gmail.com_
 
+
+### Carolina Julieta Piñeiro
 <img src="https://github.com/user-attachments/assets/4e5bd946-6146-4ac7-a233-6879462bbc42" alt="fotoCarnet" width="150"/>
-Carolina Julieta Piñeiro: Tengo 21 años y actualmente estoy cursando las últimas materias de la Tecnicatura en Desarrollo de Software. Hice el maquetado y la página web del emprendimiento de una amiga, pero por el momento no trabajé formalmente en nada relacionado con la carrera.
+Tengo 21 años y actualmente estoy cursando las últimas materias de la Tecnicatura en Desarrollo de Software. Hice el maquetado y la página web del emprendimiento de una amiga, pero por el momento no trabajé formalmente en nada relacionado con la carrera.
 
 Melisa Violi: 23 años cursando las ultimas materias de la Tecnicatura en Desarrollo de Software. Por el momento no trabaje con nada relacionado con la carrera.
-
+<img src="https://github.com/user-attachments/assets/47b930a8-9dfd-4362-b296-d010a5ab42b7" alt="fotoCarnet" width="150"/>
