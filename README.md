@@ -4,8 +4,10 @@ Juan Ignacio de Abreu: 24 años cursando el ultimo año de la Tecnicatura en Des
 
 Tomás Belanger: 22 años. Soy de Mercedes, Buenos Aires. Actualmente soy estudiante de la carrera de Ingeniería en Informática, estoy en mi tercer año. Me interesa mucho el mundo de la tecnología y el desarrollo de sistemas. En mi tiempo libre me dedico a la música como productor y DJ.
 
-Lucas Iacobellis: tengo 24 años y actualmente estoy cursando el segundo año de la Tecnicatura en Desarrollo de Software; soy un desarrollador en formación con muchas ganas de aprender y seguir mejorando. Actulmente trabajo en el sector de facturacion de la Empresa multiflex.
 
+<img src="https://github.com/user-attachments/assets/680eab65-e5f3-4ca4-9a37-e36f09b6762d" alt="fotoCarnet" width="150"/>
+
+Lucas Iacobellis: tengo 24 años y actualmente estoy cursando el segundo año de la Tecnicatura en Desarrollo de Software; soy un desarrollador en formación con muchas ganas de aprender y seguir mejorando. Me dedico a la musica y en mi tiempo libre me gusta aprender algun nuevo intrumento. 
 <img src="https://github.com/user-attachments/assets/d45ea107-e542-4796-ab90-28b79e5aa6a6" alt="fotoCarnet" width="150"/>
 
 ### Hola, Soy Jorge Echezuria
