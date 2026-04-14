@@ -8,7 +8,7 @@ public class Ej5Legajos {
 
         agregarAlumno(legajos, 10);
         agregarAlumno(legajos, 20);
-        agregarAlumno(legajos, 10); // duplicado
+        agregarAlumno(legajos, 10); 
     }
 
     public static void agregarAlumno(ConjuntoTDA legajos, int legajo) {
