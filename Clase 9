@@ -1,0 +1,162 @@
+/**
+ * Ejercicio 1 — El espejo de la cola
+ * Dada una Cola de enteros, implementar esPalindroma(c), que devuelva true si la cola representa un palíndromo y false en caso contrario.
+ * La cola debe quedar restaurada.
+ * Usar únicamente una Cola auxiliar y una Pila auxiliar.*/
+        }
+    public static boolean esPalindroma(ColaTDA c) {
+        PilaTDA p = new Estrategia_1();
+        p.InicializarPila();
+        ColaTDA caux = new ColaEstatica();
+        caux.InicializarCola();
+        while (!c.ColaVacia()) { //paso c->pila (tiene invertido la cola)y a caux (mantiene original)
+            p.Apilar(c.Primero());
+            caux.Acolar(c.Primero());
+            c.Desacolar();
+        }
+        mostrarCola(c);
+        mostarPila(p);
+
+        while (!p.PilaVacia()) {
+            c.Acolar(p.Tope());
+//            System.out.println(c.Primero() + "   " + p.Tope());
+            if(caux.Primero() != p.Tope()){
+                return false;
+            }
+            caux.Desacolar();
+            p.Desapilar();
+        }
+        return true;
+    }
+
+    public static void mostrarCola(ColaTDA c){
+        ColaTDA aux = new ColaEstatica();
+        aux.InicializarCola();
+        while (!c.ColaVacia()){
+            System.out.println(c.Primero());
+            aux.Acolar(c.Primero());
+            c.Desacolar();
+        }
+        while (!aux.ColaVacia()){
+            c.Acolar(aux.Primero());
+            aux.Desacolar();
+        }
+    }
+    public static void mostarPila(PilaTDA p){
+        PilaTDA paux = new Estrategia_1();
+        paux.InicializarPila();
+        while (!p.PilaVacia()){
+            System.out.println(p.Tope());
+            paux.Apilar(p.Tope());
+
+            p.Desapilar();
+        }
+        while (!paux.PilaVacia()){
+            p.Apilar(paux.Tope());
+            paux.Desapilar();
+        }
+    }
+/**
+ * Ejercicio 3 — La pila que no miente
+ * Dada una Pila de enteros, implementar tieneRepetidos(p), que indique si existe al menos un elemento repetido.
+ * La pila debe quedar restaurada.
+ * Usar una Pila auxiliar y un Conjunto auxiliar.*/
+    public static boolean tieneRepetidos(PilaTDA p){
+        boolean existe = false;
+        ConjuntoTDA conj = new ConjuntoDinamico();
+        conj.InicializarConjunto();
+        PilaTDA paux = new Estrategia_1();
+        paux.InicializarPila();
+        while (!p.PilaVacia()){
+            paux.Apilar(p.Tope());
+            if (conj.Pertenece(p.Tope())){
+                existe = true;
+            }
+            conj.Agregar(p.Tope());
+            p.Desapilar();
+        }
+        while (!paux.PilaVacia()){
+            p.Apilar(paux.Tope());
+            paux.Desapilar();
+        }
+        return existe;
+    }
+/**
+ * Ejercicio 4 — La frontera del conjunto
+ * Dados dos conjuntos A y B, implementar diferenciaSimetrica(A, B), que devuelva un nuevo conjunto con los elementos que pertenecen a uno de los dos conjuntos, pero no a ambos.
+ * Los conjuntos originales deben quedar restaurados.*/
+    public static ConjuntoTDA diferenciaSimetrica(ConjuntoTDA A, ConjuntoTDA B) {
+        ConjuntoTDA result = new ConjuntoDinamico();
+        result.InicializarConjunto();
+
+        PilaTDA pA = new Estrategia_1();
+        pA.InicializarPila();
+        PilaTDA pB = new Estrategia_1();
+        pB.InicializarPila();
+
+        while (!A.ConjuntoVacio()) {
+            int x = A.Elegir();
+            A.Sacar(x);
+            pA.Apilar(x);
+            if (!B.Pertenece(x)) {
+                result.Agregar(x);
+            }
+        }
+
+        while (!pA.PilaVacia()) {
+            A.Agregar(pA.Tope());
+            pA.Desapilar();
+        }
+
+        while (!B.ConjuntoVacio()) {
+            int x = B.Elegir();
+            B.Sacar(x);
+            pB.Apilar(x);
+            if (!A.Pertenece(x)) {
+                result.Agregar(x);
+            }
+        }
+        while (!pB.PilaVacia()) {
+            B.Agregar(pB.Tope());
+            pB.Desapilar();
+        }
+
+        return result;
+    }
+/***Ejercicio 5 — La cola que se ordena sola
+ Dada una Cola de enteros, pasar sus elementos a una Cola con Prioridad usando la regla:
+
+ negativos -> prioridad 0
+ cero      -> prioridad 1
+ positivos -> prioridad 2
+
+ Antes de programar, responder para:
+ [-3, 5, 0, -1, 7, 2, -4]
+ ¿Qué elemento saldrá primero de la Cola con Prioridad? - -3
+ ¿Qué elemento saldrá último? - 2
+ ¿Qué ocurre con el orden de elementos que tienen igual prioridad? - se acolan en el orden que se van obteniendo, primerro el 5 despues el 7
+ ¿La Cola con Prioridad permite repetidos? - si
+ Luego implementar clasificarPorSigno(c, cp).
+
+ */
+    public static void clasificarPorSigno(ColaTDA c, ColaPrioridadTDA cp){
+        while (!c.ColaVacia()) {
+            if (c.Primero()<0){
+                cp.AcolarPrioridad(c.Primero(),0);
+            }
+            else if(c.Primero()>0){
+                cp.AcolarPrioridad(c.Primero(),2);
+            }
+            else {
+                cp.AcolarPrioridad(c.Primero(),1);
+            }
+            c.Desacolar();
+        }
+    }
+    public static void mostrarConjunto(ConjuntoTDA conj){
+        while (!conj.ConjuntoVacio()){
+            int x = conj.Elegir();
+            System.out.println(x);
+            conj.Sacar(x);
+        }
+    }
