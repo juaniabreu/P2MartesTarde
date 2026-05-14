@@ -1,0 +1,11 @@
+EJERCICIO 3: Comparación de Implementaciones (TDA Cola)
+Basándote en las tablas de costos de la cátedra, compará la operación Acolar(x) en:
+1.ColaPU (Estática): Donde el nuevo elemento va siempre a la posición 0 del arreglo.
+2.ColaLD (Dinámica): Donde se utiliza un puntero al último nodo. Pregunta: ¿Cuál es el costo de cada una y por qué la implementación estática suele ser más "pesada" en este caso?
+
+Complejidad: O(n)
+
+1. Cola Estatica: Hay que correr todos los elementos a la derecha para acolar un nuevo elemento, por lo que el costo es O(n) 
+2. Cola Dinamica: Lo unico que se hace es actualizar donde apunta el ultimo, por lo que el costo es O(1) 
+
+Es mas pesada porque tiene que recorrer toda la cola para moverlos a la derecha. Y en la dinamica solo actualiza la referecnia  

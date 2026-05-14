@@ -1,0 +1,4 @@
+EJERCICIO 5: Cola con prioridad
+Consigna: Analizá la operación Desacolar() en una Cola con Prioridad implementada con K subcolas circulares (donde K es la cantidad de prioridades y n es la cantidad total de elementos). Determiná su complejidad y justificá por qué no depende de n.
+
+Complejidad = O(k) → porque el desacolar busca la primer subcola vacia, entonces la complejidad depende de la cantidad de prioridades que existan (k)

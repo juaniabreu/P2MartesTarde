@@ -1,0 +1,17 @@
+//EJERCICIO 1: Análisis de Código Secuencial vs. Iterativo
+//Determiná la familia de complejidad temporal $O$ del siguiente método en el peor caso. Justificá desglosando el costo de cada bloque.
+public static void procesoMisterioso(int[] arreglo) {
+    int n = arreglo.length;
+    int a = 10; // (Instrucción 1)   O(1)
+    System.out.println("Inicio");// (Instrucción 2)  O(1)
+    for (int i = 0; i < n; i++) { // (Bucle 1) O(n)
+        arreglo[i] = arreglo[i] * 2;
+    }
+    for (int j = 0; j < n; j++) { // (Bucle 2) O(n)
+        if (arreglo[j] > 100) {
+            System.out.println(arreglo[j]);
+        }
+    }
+}
+
+Complejidad = O(n)

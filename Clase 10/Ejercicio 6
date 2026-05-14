@@ -1,0 +1,10 @@
+EJERCICIO 6: Conjuntos
+Consigna: Se desea calcular la intersección de dos Conjuntos (A y B) de tamaño n cada uno, utilizando la implementación estática de la cátedra (arreglos sin duplicados). El algoritmo recorre todos los elementos de A y, por cada uno, verifica si Pertenece a B. Si está, lo agrega a un tercer conjunto "Resultado". Determiná la complejidad temporal total justificando el costo de cada operación interna.
+
+Recorrer el conjunto O(n)
+
+Ver si esta recorre de todo B O(n) por cada elemento
+
+ agregarlo O(1)
+
+O(n^2)
