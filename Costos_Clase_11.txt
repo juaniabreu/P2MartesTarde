@@ -1,0 +1,85 @@
+Ejercicio 1: 
+Es O(n^2). Porque en el peor de los casos (si el array no tiene un "5" o un "6"), se ejecutan ambos ciclos. 
+
+
+Ejercicio 2: 
+a. O(n)
+b. O(1)
+c. O(1)
+El ColaPU es mas "largo" porque, como tiene que mantener el orden logico, se mueven todos los elementos un espacio para poder insertar el nuevo elemento. Por otro lado, ColaPI y ColaD simplemente agragan al final. 
+
+
+Ejercicio 3:
+a. O(n)
+b. O(n)
+La complejidad temporal es O(n) porque cada elemento se desacola, se analiza para ver si es mayor a un limite y se vuelve a acolar. Se procesas "n" elementos una cantidad constante de veces.
+La complejidad espacial es O(n), ya que se usa una cola temporal y la cola resultado, y ambos pueden almacenar hasta "n" elementos.
+
+
+Ejercicio 4: 
+O(n)​. Aunque tiene dos ciclos, ambos son secuenciales (uno termina antes de que empiece el otro), no anidados, por lo que se suman y el término dominante sigue siendo n
+
+
+Ejercicio 5: 
+O(n^2)​. En el peor caso se visitan las n^2 celdas sin encontrar ningún par, lo que obliga a completar ambos ciclos en su totalidad.
+for (int i = 0; i < n; i++) {
+    for (int j = 0; j < n; j++) { ... }  // Este vive DENTRO del primero
+}
+
+
+Ejercicio 6:
+Bloque A — Bucle simple:
+- El bucle itera exactamente n veces.
+- Cada iteración hace una operación constante.
+- Costo del Bloque A: O(n)
+
+Bloque B — Bucles anidados:
+- El bucle externo itera n veces.
+- Por cada iteración del externo, el interno también itera n veces.
+- Total de operaciones: n × n = n^2
+- Costo del Bloque B: O(n^2)
+
+Regla de la Suma:
+T(n) = Bloque A + Bloque B
+T(n) = O(n) + O(n^2)
+T(n) = O(máx(n, n^2))
+T(n) = O(n^2)
+
+
+Ejercicio 7: 
+Partimos de n elementos. Después de cada comparación, el problema se reduce a la mitad:
+
+Paso 0:  n elementos   →  arreglo completo
+Paso 1:  n/2           →  descartaste mitad izquierda o derecha
+Paso 2:  n/4           →  dividís la mitad restante
+Paso k:  n / 2^k       →  en algún momento llegás a 1 elemento
+
+el peor caso es cuando el subarreglo restante tiene exactamente 1 elemento:
+n / 2^k = 1
+
+n = 2^k
+
+Aplicando log₂ en ambos lados:
+
+log2(n) = log2(2^k)
+log2(n) = k · log2(2)
+log2(n) = k · 1
+
+k = log2(n)
+
+La búsqueda binaria realiza como máximo log2(n) comparaciones, por lo tanto pertenece a la familia O(log n).
+
+El término n^2 domina sobre n para todo n grande, por lo que n se descarta. La complejidad total del método es cuadrática: O(n^2).
+
+
+Ejercicio 8: 
+Recorrer n elementos, cada Pertenece es O(n) y cada Agregar es O(n). Entonces la complejidad es O(n^2).
+Pertenece(x) como Agregar(x) realizan búsquedas lineales internas en el conjunto, generando un costo cuadrático total.
+
+
+Ejercicio 9:
+La complejidad es O(K), porque la operación Desacolar() en el peor caso debe recorrer todas las subcolas hasta encontrar una no vacía, y el recorrido depende de la cantidad de prioridades (K), no de la cantidad total de elementos (n). 
+
+
+Ejercicio 10: 
+Es O(2^n) "exponencial". Esto es asi porque cada llamado crea: una llamada a fibonacci(n-1) y otra a fibonacci(n-2). Entonces se puede ver como un arbol que crece rapidamente, ya que muchos calculos se repiten.
